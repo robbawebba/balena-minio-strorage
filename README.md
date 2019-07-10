@@ -12,7 +12,7 @@ $ chown -R 999:999 /media/rob/linuxbackup
 
 2. Run the docker image locally while mounting your persistent storage location into the container at the `/storage` directory:
 ```
-$ docker run -rm -d -v /media/rob/linuxbackup:/storage robbawebba/balena-minio-storage
+$ docker run --rm -d -v /media/rob/linuxbackup:/storage robbawebba/balena-minio-storage
 ```
 
 3. Upload and download your documents using your favorite minio or s3 client.

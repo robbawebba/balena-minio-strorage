@@ -14,4 +14,4 @@ RUN mkdir /storage && chown -R minio:minio /storage
 
 USER minio
 
-CMD ["minio"]
+CMD ["minio", "server", "/storage"]
